@@ -19,22 +19,22 @@ namespace ClassDemoCatchesClient
 
         public void Start()
         {
-            var catchesList = GetCatchesAsync().Result;
-            Console.WriteLine("Alle fangster\n" +
-                String.Join("\n", catchesList));
+            //var catchesList = GetCatchesAsync().Result;
+            //Console.WriteLine("Alle fangster\n" +
+            //    String.Join("\n", catchesList));
 
 
-            var oneCatch = GetOneCatchAsync(1).Result;
-            Console.WriteLine("Fangst nr="+ 1 +"\n" +
-                              oneCatch);
+            //var oneCatch = GetOneCatchAsync(1).Result;
+            //Console.WriteLine("Fangst nr="+ 1 +"\n" +
+            //                  oneCatch);
 
 
-            var deleteCatch = DeleteCatchAsync(1).Result;
-            Console.WriteLine("Fangst nr=" + 1 + " er slettet \n" +
-                              deleteCatch);
+            //var deleteCatch = DeleteCatchAsync(1).Result;
+            //Console.WriteLine("Fangst nr=" + 1 + " er slettet \n" +
+            //                  deleteCatch);
 
 
-            AddCatchAsync(new Catch(6, "Lars", "Laks", 1.2, "Norge", 51));
+            AddCatchAsync(new Catch(64, "Lars", "Laks", 1.2, "Norge", 51));
             var catchesList2 = GetCatchesAsync().Result;
             Console.WriteLine("Alle fangster\n" +
                               String.Join("\n", catchesList2));
